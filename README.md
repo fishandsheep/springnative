@@ -8,11 +8,7 @@
 ```
 ./mvnw -Pnative native:compile -DbuildArgs=-H:+StaticExecutableWithDynamicLibC
 ```
-3. 使用 `musl` 编译
+3. 编译为完全 `static`，仅仅支持 `musl` 且必须是 `static`
 ```
-./mvnw -Pnative native:compile -DbuildArgs=libc=musl
-```
-4. 编译为完全 `static`，仅仅支持 `musl`
-```
-./mvnw -Pnative native:compile -DbuildArgs=libc=musl,--static
+./mvnw -Pnative native:compile -DbuildArgs=--static,--libc=musl
 ```
