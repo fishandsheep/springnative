@@ -1,5 +1,4 @@
-# springnative
-# springnative
+# springboot3 下体验 springnative
 1. 默认native打包，默认使用 `glibc`
 ```
 ./mvnw -Pnative native:compile
@@ -8,7 +7,7 @@
 ```
 ./mvnw -Pnative native:compile -DbuildArgs=-H:+StaticExecutableWithDynamicLibC
 ```
-3. 编译为完全 `static`，仅仅支持 `musl` 且必须是 `static`, ubuntu安装 musl-tools
+3. 编译为完全 `static`，仅支持 `musl` 且必须是 `static`
 ```
 ./mvnw -Pnative native:compile -DbuildArgs=--static,--libc=musl
 ```
