@@ -1,0 +1,15 @@
+{
+  "reflection": [
+    {
+      "type": "org.apache.coyote.AbstractProtocol",
+      "methods": [
+        {
+          "name": "getProperty",
+          "parameterTypes": [
+            "java.lang.String"
+          ]
+        }
+      ]
+    }
+  ]
+}
