@@ -1,4 +1,4 @@
-# springboot3(jdk25) 下体验 springnative
+# springboot4(jdk25) 下体验 springnative
 1. 默认native打包，默认使用 `glibc`
 ```
 ./mvnw -Pnative native:compile
